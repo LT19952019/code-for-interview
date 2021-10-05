@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            color: #fff;
+        }
+        header {
+            background-color: blue;
+        }
+        .main {
+            background-color: orange;
+            padding: 0 100px
+        }
+        .left, .center, .left, .right {
+            float: left;
+        }
+        .center {
+            background-color: purple;
+            width: 100%;
+        }
+        .left {
+            background-color: red;
+            width: 100px;
+            margin-left: -100%;
+            position: relative;
+            left: -100px;
+        }
+        .right {
+            background-color: grey;
+            width: 100px;
+            margin-left: -100px;
+            position: relative;
+            left: 100px;
+        }
+        footer {
+            background-color: pink;
+        }
+        /* 清除浮动 */
+        .clear-fix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <div class="main clear-fix">
+        <div class="center">玩亚索</div>
+        <div class="left">睡觉</div>
+        <div class="right">吃饭</div>
+    </div>
+    <div class="bottom">bottom</div>
+</body>
+</html>

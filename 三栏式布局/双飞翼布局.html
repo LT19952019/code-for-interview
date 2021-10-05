@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first, .second, .third {
+            float: left;
+        }
+        .first {
+            width: 100%;
+            background-color: purple;
+        }
+        .content {
+            margin: 0 100px;
+        }
+        .second {
+            width: 100px;
+            background-color: red;
+            margin-left: -100%; /* 作用和圣杯一样 */
+        }
+        .third {
+            width: 100px;
+            background-color: grey;
+            margin-left: -100px; /* 作用和圣杯一样 */
+        }
+        .footer {
+            background-color: pink;
+            clear: both; /* 清除footer上面元素的浮动 */
+        }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <div class="first">
+      <div class="content">玩亚索</div>
+    </div>
+    <div class="second">睡觉</div>
+    <div class="third">吃饭</div>
+    <div class="footer">bottom</div> 
+</body>
+</html>
