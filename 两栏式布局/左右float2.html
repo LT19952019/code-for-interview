@@ -4,32 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>float</title>
+    <title>Document</title>
     <style>
         .left {
             float: left;
             width: 200px;
             height: 200px;
-            background-color: red;
+            background-color: yellow;
         }
         .right {
             float: right;
-            width: 100px;
             height: 200px;
-            background-color: green;
-        }
-        .main {
-            background-color: yellow;
-            margin: 0 110px 0 210px;
-            height: 200px;
+            width: calc( 100% - 200px);
+            background-color: blue;
         }
     </style>
 </head>
 <body>
-    <div>
+    <div class="contain" style="overflow: hidden;">
         <div class="left"></div>
         <div class="right"></div>
-        <div class="main"></div>
     </div>
 </body>
 </html>
