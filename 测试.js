@@ -1,14 +1,14 @@
-function Parent(name,age){
-    this.name=name
-    this.age=age
-    console.log(this)
-    console.log(this.name,this.age)
+let map = new Map()
+map.set(1,1)
+map.set(2,1)
+let a = map.get(1)
+map.set(1, a+1)
+ a = map.get(1)
+map.set(1, a+1)
+// console.log(map
+// )
+for(var value of map.values()) {
+    if(value > 1) {
+        console.log(map[value])
+    }
 }
-function Children(name,age,height){
-    console.log(this,arguments)
-    // Parent.apply(this,[name,age,height])
-    // Parent(name,age)
-    this.height=height
-}
-let lisi=new Children("李四",12,170)
-// console.log(lisi.name,lisi.age,lisi.height)
